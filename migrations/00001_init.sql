@@ -7,4 +7,4 @@ CREATE TABLE IF NOT EXISTS users (
 
 
 -- +goose Down
-DROP TABLE users1;
+DROP TABLE users;
