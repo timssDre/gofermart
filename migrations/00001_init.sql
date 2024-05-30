@@ -1,0 +1,10 @@
+-- +goose Up
+CREATE TABLE IF NOT EXISTS users (
+		ID SERIAL PRIMARY KEY,
+		Login VARCHAR(256) NOT NULL UNIQUE,
+		Password VARCHAR(256) NOT NULL
+	);
+
+
+-- +goose Down
+DROP TABLE users1;

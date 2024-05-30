@@ -22,11 +22,6 @@ func InitDatabase(DatabasePath string) (*StoreDB, error) {
 	storeDB := new(StoreDB)
 	storeDB.db = db
 
-	err = createTableUsers(db)
-	if err != nil {
-		return nil, fmt.Errorf("error creae table db: %w", err)
-	}
-
 	return storeDB, nil
 }
 
